@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Neighbor Safety App</title>
+    <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <a href="../index.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <div id="dashboard-container">
+            <!-- Left side: Reported Incidents -->
+            <section class="left-side">
+                <h3>Reported Incidents</h3>
+                <div id="incident-container"></div>
+            </section>
+        
+            <!-- Right side: Announcements Section -->
+            <section class="right-side">
+                <!-- Create Announcement Form -->
+                <div class="announcement-form">
+                    <h3>Create Announcement</h3>
+                    <form id="announcement-form">
+                        <input type="text" id="announcement-title" placeholder="Title" required>
+                        <textarea id="announcement-message" placeholder="Message" required></textarea>
+                        <button type="submit">Create Announcement</button>
+                    </form>
+                </div>
+
+                <!-- Announcements List -->
+                <div class="announcements-container">
+                    <h3>All Announcements</h3>
+                    <div id="announcement-list"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="../js/dashboard-admin.js"></script>
+    <script src="../js/announcement.js"></script>
+</body>
+</html>

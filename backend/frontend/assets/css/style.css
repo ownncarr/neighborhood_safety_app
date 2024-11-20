@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+    font-family: 'Jost', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #573b8a;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background: #6d44b8;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #c1b1df;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+label {
+    color: #573b8a;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 100%;
+}
+
+input, textarea, select {
+    width: 100%;
+    height: 40px;
+    background: #e0dede;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 80px;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background: #573b8a;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #6d44b8;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 10px;
+}
+
+#login-form, #register-form, #incident-form {
+    width: 300px;
+    background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/cover;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+}
+
+#register-form, #login-form {
+    background-color: rgba(255, 255, 255, 0.8); /* Ensure visibility */
+}
+
+#incident-form {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#incident-list, #announcements-container {
+    width: 48%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 5px 20px 50px #000;
+}
+
+#incident-list h2, #announcements-container h2 {
+    font-size: 1.4em;
+    color: #573b8a;
+    margin-bottom: 15px;
+}
+
+#incident-list ul, #announcements-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#incident-list li, #announcements-container li {
+    margin-bottom: 10px;
+    background: #e0dede;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#incident-map {
+    height: 300px;
+    background-color: #ccc; /* Temporary background for the map */
+    border-radius: 10px;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 1.8em;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+h2 {
+    color: #573b8a;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 10px;
+}

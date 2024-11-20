@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report an Incident - Neighbor Safety App</title>
+    <link rel="stylesheet" href="../assets/css/report.css">
+</head>
+<body>
+    <header>
+        <h1>Report an Incident</h1>
+        <nav>
+            <a href="../dashboards/dashboard-resident.html">Dashboard</a>
+            <a href="../pages/track-reports.html">Track my reports</a>
+            <a href="../index.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <div id = 'incident-container'>
+        <form id="incident-form">
+            <label for="title">Incident Title:</label>
+            <input type="text" id="title" name="title" required>
+        
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+        
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+        
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="crime">Crime</option>
+                <option value="hazard">Hazard</option>
+                <option value="theft">Theft</option>
+            </select>
+        
+            <label for="incident-photo">Photo:</label>
+            <input type="file" id="incidentphoto" name="incident-photo" accept="image/*">
+        
+            <button type="submit">Report Incident</button>
+        </form>
+        </div>
+        
+    </main>
+
+    <script src="../js/reportincident.js"></script>
+</body>
+</html>

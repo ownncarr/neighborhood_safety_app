@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/government.css">
+</head>
+<body>
+    <header>
+        <h1>Government Dashboard</h1>
+        <nav>
+            <a href="../index.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <div class="left-side">
+            <section>
+                <h2>All Reported Incidents</h2>
+                <table id="incident-table">
+                    <thead>
+                        <tr>
+                            <th>Incident ID</th>
+                            <th>Category</th>
+                            <th>Description</th>
+                            <th>Location</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Incident rows will be populated dynamically -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    
+        <div class="right-side">
+            <section class="announcement-form">
+                <h2>Create Announcement</h2>
+                <form id="announcement-form">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Post Announcement</button>
+                </form>
+            </section>
+    
+            <section class="announcements">
+                <h2>Announcements</h2>
+                <div id="announcements-container">
+                    <!-- Announcements will be dynamically populated -->
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <script src="../js/dashboard-government.js"></script>
+    <script src="../js/announcement.js"></script>
+</body>
+</html>
